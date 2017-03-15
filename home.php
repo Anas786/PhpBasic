@@ -61,8 +61,11 @@ else
     <td><input type="reset" name="Reset" id="Reset" value="Reset" /></td>
   </tr>
 </table>
-
 </form>
+<?php
+$mysql = new mysqli("localhost", "root");
+echo "MySQL Server info: ".$mysql->host_info;
+?>
 <?PHP } ?>
 <p id="errorMessage" style="color:#C00; font-style:italic;"></p>
 
